@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aidan Charlton //</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-color-bar"></div>
+    <header class="headdr">
+        <a href="../My-Cv/index.html">
+            <h1 class="name">AIDAN CHARLTON</h1>
+        </a>
+
+        <div class="nav">
+            <a class="linkys" href="about.html">About</a>
+            <a class="linkys" href="audio-visual.html">A/V</a>
+            <a class="linkys" href="photo.html">Photo</a>
+            <a class="linkys" href="/contact.html">Contact</a>
+        </div>
+    </header>
+    <!-- The photo slider container is something that I learned from watching a youtube tutorial (https://www.youtube.com/watch?v=FZrHoAUkHpE). 
+    It mimics the look of an interactive photo slider without the use of javascript. 
+    The photos are all in a row placed horizontally in a div, however the container is set to hold the width of only a single image.
+    Next step was to make seperate span tags for the photos with individual id tags. in CSS I had to input the starting point in pixels for
+    each of the images. starting values 0px 1200px 2400px 3600px in my case. the 4 "buttons" are anchor tags styled to be little white circles.
+    when clicked it scrolls to the desired start point. the transform tool is used to give the time in seconds to scroll between photos.
+  -->
+    <div class="slider-container">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <span id="slider-image-4"></span>
+
+        <div class="image-container">
+            <img src="images/8-track.jpg" alt="8 track tape recorder" class="slider-image">
+            <img src="images/vhs.jpg" alt="vhs glitch" class="slider-image">
+            <img src="images/8-mm.jpg" alt="8mm camera" class="slider-image">
+            <img src="images/trees.jpg" alt="trees" class="slider-image">
+        </div>
+
+        <div class="button-container">
+            <a href="#slider-image-1" class="slider-button"></a>
+            <a href="#slider-image-2" class="slider-button"></a>
+            <a href="#slider-image-3" class="slider-button"></a>
+            <a href="#slider-image-4" class="slider-button"></a>
+        </div>
+    </div>
+    <div>
+        <h3 id="subheadr2">
+            // Audio/Video Artist //<br>
+            // Web Developer //<br>
+            // Montreal<br>
+        </h3>
+    </div>
+
+    <footer>
+        <hr>
+        ©2020 Aidan Charlton
+        <a class="bottom-nav" href="about.html">About</a>
+        <a class="bottom-nav" href="audio-visual.html">A/V</a>
+        <a class="bottom-nav" href="photo.html">Photo</a>
+        <a class="bottom-nav" href="contact.html">Contact</a>
+    </footer>
+</body>
+
+</html>
